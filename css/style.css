@@ -11,7 +11,6 @@ body {
 h1,
 h2,
 h3 {
-  text-align: center;
   margin: 0;
 }
 
@@ -33,7 +32,24 @@ h3 {
   margin-top: 40px;
   justify-content: center;
 }
-
+@media (max-width: 576px) {
+  h1,
+  h3 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
+}
 .navigation-links a {
   margin: 20px;
   border-radius: 4px;
